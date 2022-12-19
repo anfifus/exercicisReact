@@ -1,5 +1,5 @@
 import "./Home.css";
-import Graella from "../exercicis/Graella/Graella";
+import Graella from "../exercicis/Comptador/Graella";
 
 function Home() {
   return <Graella />;

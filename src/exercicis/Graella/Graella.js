@@ -1,4 +1,4 @@
-import Picture from "./components/Picture";
+import Picture from "./Components/Picture";
 import "./Graella.css";
 
 function Graella() {
