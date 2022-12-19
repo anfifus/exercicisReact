@@ -1,0 +1,8 @@
+.App {
+  text-align: center;
+}
+#graella {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
