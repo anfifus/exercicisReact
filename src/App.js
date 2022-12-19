@@ -1,4 +1,4 @@
-import Foto from "./Components/foto/Foto";
+import Foto from "./exercicis/Graella/Components/foto/Foto";
 import "./App.css";
 
 const fotosURL = [
@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div id="graella">
-          {fotosURL.map((fotoURL,count) => {
+          {fotosURL.map((fotoURL, count) => {
             return <Foto key={fotoURL} foto={fotoURL} turn={count} />;
           })}
         </div>
