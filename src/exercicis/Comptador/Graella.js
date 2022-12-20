@@ -5,7 +5,21 @@ function Graella() {
   let valueNum = 0;
   const [valor, setValue] = useState(0);
   function changeValue(value) {
-    return value === "+5" ? valor + 5 : value === "+1" ? valor + 1 : valor - 1;
+    console.log("Valor a devolver >>",valor);
+    return value === "+5" && valor < 6 ? valor + 5 : value === "+1" && valor !== 10 ? valor + 1 : valor !== 0 && value === "-1"  ? valor - 1 : valor;
+  /*   if(valor >= 6 && value === "+5" || valor === 10 && value === "+1"){
+      alert("The value limit is 10");
+    }
+    else{
+      if(valor === 0 && value === "-1"){
+        alert("the value minium limit is 0");
+      }
+      else{console.log("Valor a devolver >>",valor); */
+      //return value === "+5" ? valor + 5 : value === "+1" ? valor + 1 : valor - 1;
+        
+      /* } 
+    }*/
+    
   }
   function controlValue(value) {
     if (value > 10 && value < 0) alert("The value is not between 10 and 0");
