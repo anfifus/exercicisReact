@@ -1,8 +1,8 @@
 import "./Home.css";
-import Graella from "../exercicis/Comptador/Graella";
+import Acordio from "../exercicis/Acordio/Acordio";
 
 function Home() {
-  return <Graella />;
+  return <Acordio />;
 }
 
 export default Home;

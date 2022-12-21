@@ -1,13 +1,19 @@
-import "./Graella.css";
+import "./Comptador.css";
 import { useState } from "react";
 
-function Graella() {
+function Comptador() {
   let valueNum = 0;
   const [valor, setValue] = useState(0);
   function changeValue(value) {
-    console.log("Valor a devolver >>",valor);
-    return value === "+5" && valor < 6 ? valor + 5 : value === "+1" && valor !== 10 ? valor + 1 : valor !== 0 && value === "-1"  ? valor - 1 : valor;
-  /*   if(valor >= 6 && value === "+5" || valor === 10 && value === "+1"){
+    console.log("Valor a devolver >>", valor);
+    return value === "+5" && valor < 6
+      ? valor + 5
+      : value === "+1" && valor !== 10
+      ? valor + 1
+      : valor !== 0 && value === "-1"
+      ? valor - 1
+      : valor;
+    /*   if(valor >= 6 && value === "+5" || valor === 10 && value === "+1"){
       alert("The value limit is 10");
     }
     else{
@@ -15,15 +21,12 @@ function Graella() {
         alert("the value minium limit is 0");
       }
       else{console.log("Valor a devolver >>",valor); */
-      //return value === "+5" ? valor + 5 : value === "+1" ? valor + 1 : valor - 1;
-        
-      /* } 
+    //return value === "+5" ? valor + 5 : value === "+1" ? valor + 1 : valor - 1;
+
+    /* } 
     }*/
-    
   }
-  function controlValue(value) {
-    if (value > 10 && value < 0) alert("The value is not between 10 and 0");
-  }
+
   console.log("Value num>>", valueNum);
   const handlerClick = (value) => {
     setValue(() => changeValue(value));
@@ -44,4 +47,4 @@ function Graella() {
   );
 }
 
-export default Graella;
+export default Comptador;
