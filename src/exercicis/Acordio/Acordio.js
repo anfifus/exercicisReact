@@ -1,6 +1,7 @@
 import "./Acordio.css";
 import Titol from "./Components/Titol";
-
+import { useState } from "react";
+ 
 const titols = [
   { titol: "Titol 1", subtitol: "Subtitol 1" },
   { titol: "Titol 2", subtitol: "Subtitol 2" },
@@ -10,14 +11,41 @@ const titols = [
 ];
 
 function Acordio() {
+/*   const [visibility, setVisibility] = useState("invisibility");
+ */
+/*   const handlerVisibility = (e,id) => {
+    setVisibility((isVisible) => changeVisibility(isVisible,e,id));
+  }; */
+
+  /* function changeVisibility(isVisible,e,id) {
+    console.log("id >>", id);
+    console.log("e.target.id >>", e.target.id);
+    console.log("e >>", isVisible);
+    console.log("Result condition",e.target.id === id.toString());
+   return isVisible === "invisibility" && Number(e.target.id) === id 
+    ? "visibility" 
+    : isVisible === "visibility" && e.target.id === id ? "invisibility"
+    : "invisibility";
+}  */
+/* function changeVisibility(isVisible,e,id) {
+  console.log("id >>", id);
+  console.log("e.target.id >>", e.target.id);
+  console.log("e >>", isVisible);
+  console.log("Result condition",e.target.id === id.toString());
+ return isVisible === "invisibility" ? "visibility" 
+  : "invisibility";
+}
+ */
   return titols.map((titol, contador) => {
     return (
       <Titol
-        key={contador.toString()}
+/*         clickResult={(e) => handlerVisibility(e,contador)}
+ */        key={contador}
         titol={titol.titol}
         subtitol={titol.subtitol}
-        id={contador}
-      />
+         id={contador}
+/*          visibility= {visibility}
+ */       />
     );
   });
 }
