@@ -1,8 +1,8 @@
 import "./Home.css";
-import Acordio from "../exercicis/Acordio/Acordio";
+import Formulari from "../exercicis/Formulari/Formulari";
 
 function Home() {
-  return <Acordio />;
+  return <Formulari />;
 }
 
 export default Home;
