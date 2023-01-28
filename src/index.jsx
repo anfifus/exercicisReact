@@ -1,41 +1,51 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import Home from './pages/Home';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import Home from "./pages/Home";
 import Acordio from "./exercicis/Acordio/Acordio";
 import Comptador from "./exercicis/Comptador/Comptador";
 import Formulari from "./exercicis/Formulari/Formulari";
 import Graella from "./exercicis/Graella/Graella";
-import reportWebVitals from './reportWebVitals';
-import {createBrowserRouter, Link, RouterProvider} from "react-router-dom";
+import FormCounter from "./exercicis/Counter/Form";
+import Efectes from "./exercicis/Efectes/Efectes";
+import reportWebVitals from "./reportWebVitals";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home/>,
+    element: <Home />,
   },
   {
     path: "/exercicis/Acordio/Acordio",
-    element: <Acordio/>,
+    element: <Acordio />,
   },
   {
     path: "/exercicis/Comptador/Comptador",
-    element: <Comptador/>,
+    element: <Comptador />,
   },
   {
     path: "/exercicis/Formulari/Formulari",
-    element: <Formulari/>,
+    element: <Formulari />,
   },
   {
     path: "/exercicis/Graella/Graella",
-    element: <Graella/>,
+    element: <Graella />,
   },
-])
+  {
+    path: "/exercicis/Counter/Form",
+    element: <FormCounter />,
+  },
+  {
+    path: "/exercicis/Efectes/Efectes",
+    element: <Efectes />,
+  },
+]);
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
