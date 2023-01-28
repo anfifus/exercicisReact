@@ -20,7 +20,7 @@ function Counter() {
     console.log("Esta entrant count -->", count);
   };
   useEffect(() => {
-    localStorage.setItem("valor", count);
+    localStorage.setItem("valor", count.toString());
   }, [count]);
   return (
     <div>
