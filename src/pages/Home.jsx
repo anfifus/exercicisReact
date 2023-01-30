@@ -1,6 +1,5 @@
 import "./Home.css";
 import React from "react";
-import ReactDOM from "react-dom/client";
 import { Link } from "react-router-dom";
 
 function Home() {
@@ -23,6 +22,9 @@ function Home() {
       </li>
       <li>
         <Link to="./exercicis/Efectes/Efectes">Efectes</Link>
+      </li>
+      <li>
+        <Link to="./exercicis/TeoriaComponents/WindowA">WindowA</Link>
       </li>
     </ul>
   );

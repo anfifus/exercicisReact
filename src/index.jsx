@@ -9,6 +9,7 @@ import Graella from "./exercicis/Graella/Graella";
 import FormCounter from "./exercicis/Counter/Form";
 import Efectes from "./exercicis/Efectes/Efectes";
 import reportWebVitals from "./reportWebVitals";
+import WindowA from "./exercicis/TeoriaComponents/WindowA";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
   {
     path: "/exercicis/Efectes/Efectes",
     element: <Efectes />,
+  },
+  {
+    path: "/exercicis/TeoriaComponents/WindowA",
+    element: <WindowA />,
   },
 ]);
 
