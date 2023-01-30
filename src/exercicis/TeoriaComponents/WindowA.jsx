@@ -1,20 +1,5 @@
-/* import {useEffect, useState} from "react";
+import { Link } from "react-router-dom";
 
-function WindowB() {
-    const [width, setWidth] = useState(window.innerWidth);
-
-    useEffect(() => {
-        const handleResize = () => setWidth(window.innerWidth);  // Funcio
-        window.addEventListener('resize', handleResize); // Component did mount
-        return () => { // Component did unmoun
-            window.removeEventListener('resize', handleResize);
-        };
-    });
-
-    return width;
-}
-
-export default WindowB; */
 import { Component } from "react";
 class WindowA extends Component {
   constructor(props) {
@@ -27,6 +12,7 @@ class WindowA extends Component {
   }
 
   componentWillUnmount() {
+    console.log("Eliminando listener en A");
     window.removeEventListener("resize", this.handleResize);
   }
 
@@ -38,6 +24,11 @@ class WindowA extends Component {
     return (
       <div>
         <p>{this.state.width}</p>
+        <ul>
+          <li>
+            <Link to="/exercicis/WindowB/WindowB">WindowB</Link>
+          </li>
+        </ul>
       </div>
     );
   }

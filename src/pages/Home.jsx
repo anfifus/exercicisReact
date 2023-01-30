@@ -26,6 +26,12 @@ function Home() {
       <li>
         <Link to="./exercicis/TeoriaComponents/WindowA">WindowA</Link>
       </li>
+      <li>
+        <Link to="./exercicis/WindowB/WindowB">WindowB</Link>
+      </li>
+      <li>
+        <Link to="./exercicis/PingB/PingB">PingB</Link>
+      </li>
     </ul>
   );
 }
