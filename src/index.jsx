@@ -12,6 +12,7 @@ import reportWebVitals from "./reportWebVitals";
 import WindowA from "./exercicis/TeoriaComponents/WindowA";
 import WindowB from "./exercicis/WindowB/WindowB";
 import PingB from "./exercicis/PingB/PingB";
+import FrontEnd from "./exercicis/FrontEnd/FrontEnd";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
   {
     path: "/exercicis/PingB/PingB",
     element: <PingB />,
+  },
+  {
+    path: "/exercicis/FrontEnd/FrontEnd",
+    element: <FrontEnd />,
   },
 ]);
 

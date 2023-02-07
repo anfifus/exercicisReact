@@ -32,6 +32,9 @@ function Home() {
       <li>
         <Link to="./exercicis/PingB/PingB">PingB</Link>
       </li>
+      <li>
+        <Link to="./exercicis/FrontEnd/FrontEnd">FrontEnd</Link>
+      </li>
     </ul>
   );
 }
